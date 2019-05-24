@@ -1,0 +1,20 @@
+/* Images */ 
+
+.gal-img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+        -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+}
+
+
+.gal-images {
+    position: relative;
+    text-align: center;
+    margin: 100px;
+    vertical-align: middle;
+}
+
