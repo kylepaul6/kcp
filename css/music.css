@@ -1,0 +1,68 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    margin:0;
+    padding: 0;
+    background-color: white;
+}
+
+
+
+.music-link:hover {
+    color: #b1c0d8;
+}
+
+.suhr-div {  
+    display: flex;
+    justify-content: center;
+}
+
+.suhr, .fam-feel, .wasted {
+    margin: 10px;
+}
+
+.suhr {
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+}
+
+.songs {
+    display: flex;
+    justify-content: center;
+}
+
+.fam-feel-div, .wasted-div {
+    display: flex;
+
+}
+
+.fam-feel {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+
+}
+
+.wasted {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+
+.wasted, .fam-feel {
+    -webkit-box-shadow: 0px 0px 56px -20px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 56px -20px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 56px -20px rgba(0,0,0,0.85);
+}
+
+
