@@ -1,0 +1,188 @@
+/* Fonts & Colors 
+Black (almost): #1b2223
+Dark Gray: #5a5c5e
+Blue (mid): #b1c0d8
+Off-White: #f4f8ff
+background-image: linear-gradient(to top, white, #f4f8ff);
+*/
+
+/* DEFAULTS */ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+html {
+    margin:0;
+    padding: 0;
+    background-color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: #5a5c5e;
+}
+
+.learn-more {
+    color: #7caeff;
+}
+.logo-home { 
+    color: black;
+}
+h1 {
+    float: left;
+    font-size: 70%;
+}
+
+h2 {
+    color:#5a5c5e;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2, h3, h4, p {
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    color: #5a5c5e;
+}
+
+.link:hover {
+    color: #b1c0d8;
+}
+
+.link {
+    padding: 5px;
+    text-decoration: none;
+    color: #5a5c5e;
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 35px;
+    background-image: linear-gradient(to top, white, #f4f8ff);
+    padding: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5a5c5e;
+    font-size: 50%;
+    float: right;
+    padding: 0px 20px;
+}
+
+
+nav {
+    padding-top: 5px;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #b1c0d8;
+}
+
+/* The grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right'
+    'bottom bottom bottom bottom bottom bottom'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    margin: 5px;
+    height: auto;
+}
+
+/* LEFT COLUMN */
+
+.left {
+    grid-area: left;
+    background-image:linear-gradient(to top, white, #f4f8ff);
+}
+
+.college-text {
+    text-align: left;
+    line-height: 3em;
+}
+
+/* MIDDLE COLUMN */
+.middle {
+    grid-area: middle;
+    background-image:linear-gradient(to top, white, #e2e2e2);
+}
+
+.image2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.ff {
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    justify-content: center;
+     -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+}
+
+
+/* RIGHT COLUMN */
+.right {
+    grid-area: right;
+    background-image:linear-gradient(to top, white, #f4f8ff);
+}
+
+/* BOTTOM ROW */
+.bottom {
+    grid-area: bottom;
+    background-image:linear-gradient(to top, white, #e2e2e2);
+    margin-bottom: 100px;
+}
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'bottom bottom bottom bottom bottom bottom'
+        'footer footer footer footer footer footer';
+  }
+}
