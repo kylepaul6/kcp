@@ -1,0 +1,12 @@
+.uva-div { 
+    display: flex;
+    justify-content: center;
+}
+
+.uva-img {
+    width: 500px;
+    height: 150px;
+    -webkit-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -10px rgba(0,0,0,0.75);
+}
