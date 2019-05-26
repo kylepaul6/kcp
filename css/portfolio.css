@@ -13,54 +13,18 @@
 
 .box {
     height: auto;
-    width: auto;
     margin: 10px;
+    float: left;
     -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
 }
 
-/*Responsive Layouts*/
-@media (max-width: 539px) {
-    .box {
-        float: none;
-        display: block;
-        width: 100%;
-    }
+
+
+
+img {
+    width: 100%;
+    float: left;
 }
-
-    
-@media (min-width: 540px) {
-    .box {
-        float: left;
-        display: inline-block;
-    }
-    .box {
-        box-sizing: border-box;
-    }
-}
-    
-
-@media (max-width: 849px) {
-        .box {
-        float: none;
-        display: block;
-        width: 100%;
-    }
-    .box {
-        box-sizing: border-box;
-    }
-}
-
-@media (min-width: 850px) {
-        .box {
-        float: left;
-        display: inline-block;
-    }
-    .box {
-        box-sizing: border-box;
-    }
-}
-
-
 
