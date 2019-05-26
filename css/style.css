@@ -175,7 +175,7 @@ nav {
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .grid-container  {
     grid-template-areas: 
         'header header header header header header' 
