@@ -123,9 +123,28 @@ nav {
     background-image:linear-gradient(to top, white, #f4f8ff);
 }
 
+.college-list {
+    justify-content: center;
+}
 .college-text {
-    text-align: center;
     line-height: 3em;
+    text-align: center;
+}
+
+.design-image-div {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.design-image {
+    position: relative;
+    padding: 10px;
+    height: 300px;
+    -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
 }
 
 /* MIDDLE COLUMN */
@@ -157,8 +176,18 @@ nav {
 .right {
     grid-area: right;
     background-image:linear-gradient(to top, white, #f4f8ff);
+    position: relative;
 }
 
+.code-img {
+    height: 250px;
+    width: 250px;
+    -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+    position: absolute;
+    left: 10%;
+}
 /* BOTTOM ROW */
 .bottom {
     grid-area: bottom;
@@ -175,14 +204,31 @@ nav {
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 900px) {
-  .grid-container  {
-    grid-template-areas: 
-        'header header header header header header' 
-        'left left left left left left' 
-        'middle middle middle middle middle middle' 
-        'right right right right right right' 
-        'bottom bottom bottom bottom bottom bottom'
-        'footer footer footer footer footer footer';
-  }
+@media (max-width: 800px) {
+    .grid-container  {
+        grid-template-areas: 
+            'header header header header header header' 
+            'left left left left left left' 
+            'middle middle middle middle middle middle' 
+            'right right right right right right' 
+            'bottom bottom bottom bottom bottom bottom'
+            'footer footer footer footer footer footer';
+      }
+    
+    .left-list {
+        display: none;
+    }
+    .college-list{
+        display: none;
+    }
+    .design-image {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 800px) {
+    .design-image {
+        display: none;
 }
