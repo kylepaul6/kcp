@@ -15,7 +15,9 @@ background-image: linear-gradient(to top, white, #f4f8ff);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -33,201 +35,188 @@ a {
 .learn-more {
     color: #7caeff;
 }
-.logo-home { 
-    color: black;
-}
-h1 {
-    float: left;
-    font-size: 70%;
-}
 
 h2 {
     color:#5a5c5e;
     display: block;
     text-align: center;
-    margin-top: 10px;
+    padding: 20px;
+    padding-top: 30px;
 }
 
-h2, h3, h4, p {
-    padding: 10px;
-}
 
 p {
     text-align: center;
     color: #5a5c5e;
+    line-height: 1.5em;
 }
 
-.link:hover {
-    color: #b1c0d8;
+.learn-more {
+    line-height: 50px;
 }
 
-.link {
-    padding: 5px;
-    text-decoration: none;
-    color: #5a5c5e;
-}
 
 /* HEADER */
 
-.header {
-    grid-area: header;
-    background-color: #f1f1f1;
-    text-align: center;
-    font-size: 35px;
-    background-image: linear-gradient(to top, white, #f4f8ff);
-    padding: 15px;
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+  
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #5a5c5e;
-    font-size: 50%;
+header .logo {
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
     float: right;
-    padding: 0px 20px;
+   
 }
 
-
-nav {
-    padding-top: 5px;
-    margin-right: 20px;
-}
-
-.nav-link:hover {
-    color: #b1c0d8;
-}
-
-/* The grid container */
-
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right'
-    'bottom bottom bottom bottom bottom bottom'
-    'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-    padding: 10px;
-    margin: 5px;
-    height: auto;
-}
-
-/* LEFT COLUMN */
-
-.left {
-    grid-area: left;
-    background-image:linear-gradient(to top, white, #f4f8ff);
-}
-
-.college-list {
-    justify-content: center;
-}
-.college-text {
-    line-height: 3em;
-    text-align: center;
-}
-
-.design-image-div {
+header nav ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    margin: 10px;
     
 }
 
-.design-image {
-    padding: 10px;
-    height: 300px;
-    -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
+header nav ul li {
+    list-style: none;
 }
 
-/* MIDDLE COLUMN */
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active{
+    background: #f4f8ff;
+}
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+}
+
+@media (max-width: 991px) {
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        background: black;
+    }
+    
+    header nav.active {
+        left: 0;
+        font-size: 2em;
+
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0,0,0, .2);
+        height: 100px;
+        line-height: 100px;
+        
+    }
+    p {
+        display: none;
+    }
+}
+
+
+/* COLUMNS */ 
+.container {
+    margin-top: 50px;
+}
+
+.left {
+    background-image: linear-gradient(to top, white, #f4f8ff);
+}
+
 .middle {
-    grid-area: middle;
-    background-image:linear-gradient(to top, white, #e2e2e2);
+    background-image: linear-gradient(to top, white, #e2e2e2);
 }
 
-.image2 {
+.right { 
+    background-image: linear-gradient(to top, white, #f4f8ff);
+}
+
+.image-container {
     display: flex;
     justify-content: center;
     margin: 10px;
     margin-bottom: 20px;
-   
 }
-
-.ff {
-    height: 400px;
-    width: 400px;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
-    justify-content: center;
      -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
 }
 
 
+/* LEFT COLUMN */
+
+.design-image {
+    height: auto;
+    max-width: 300%;
+    background-size: cover;
+  
+}
+
+/* MIDDLE COLUMN */
+
+.ff {
+    height: auto;
+    width: 60%;
+}
+
 /* RIGHT COLUMN */
-.right {
-    grid-area: right;
-    background-image:linear-gradient(to top, white, #f4f8ff);
-    position: relative;
+.code-image {
+    max-width: 40%;
 }
 
-.code-img {
-    height: 250px;
-    width: 250px;
-    -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    position: absolute;
-    left: 10%;
-}
-/* BOTTOM ROW */
-.bottom {
-    grid-area: bottom;
-    background-image:linear-gradient(to top, white, #e2e2e2);
-    margin-bottom: 100px;
-}
 /* FOOTER */
+footer {
+    background-image: linear-gradient(to top, white, #e2e2e2);
+    height: 4em; 
+    text-align: center;
+}
+
 .footer {
-  grid-area: footer;
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-    .grid-container  {
-        grid-template-areas: 
-            'header header header header header header' 
-            'left left left left left left' 
-            'middle middle middle middle middle middle' 
-            'right right right right right right' 
-            'bottom bottom bottom bottom bottom bottom'
-            'footer footer footer footer footer footer';
-      }
-    
-    .left-list {
-        display: none;
-    }
-    .college-list{
-        display: none;
-    }
-    .design-image {
-        display: flex;
-        justify-content: center;
-    }
-    
-}
-
-@media (min-width: 800px) {
-    .design-image {
-        display: none;
+    vertical-align: middle;
+    padding: 20px;
 }
