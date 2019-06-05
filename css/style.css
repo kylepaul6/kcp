@@ -135,7 +135,7 @@ header nav ul li a:active{
     header nav.active {
         left: 0;
         font-size: 2em;
-
+    
     }
     header nav ul {
         display: block;
