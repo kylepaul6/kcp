@@ -6,6 +6,7 @@
 .middle {
     background-image: linear-gradient(to top, white, #f4f8ff);
 }
+
 .right{
     background-image: linear-gradient(to top, white, #f4f8ff);
 }
@@ -26,16 +27,13 @@
 }
 
 @media (max-width: 991px) {
-    .ff, .wasted {
+    .wasted, .ff {
         display: none;
     }
     .middle {
         background-image: url("../images/wasted.png");
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: 70%;
-        min-height: 500px;
-
+        min-height: 300px;
+        background-position: 50%;
     }
-    
 }
