@@ -137,12 +137,16 @@ header nav ul li a:active{
     p, h4 {
         display: none;
     }
+    .column {
+        justify-content: center;
+    }
     .image-container {
         justify-content: center;
     }
-    img {
-        margin: 40px;
+    .article-text  {
+        display: none;
     }
+   
 }
 
 
