@@ -59,3 +59,16 @@ img {
 .article1 {
     max-width: 50%;
 }
+
+.project-menu {
+    display: none;
+}
+@media (max-width: 991px) {
+    .project-list-item {
+        display: none;
+    }
+    .project-menu {
+        display: block;
+        padding: 10px;
+    }
+}
