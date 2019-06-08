@@ -44,7 +44,6 @@ h2 {
     padding-top: 30px;
 }
 
-
 p {
     text-align: center;
     color: #5a5c5e;
@@ -176,7 +175,7 @@ header nav ul li a:active{
 }
 
 .right { 
-    background-image: linear-gradient(to top, white, #e2e2e2);
+    background-image: url("../images/code-wallpaper.jpg");
 }
 
 
@@ -201,8 +200,7 @@ img {
     height: auto;
     max-width: 300%;
     background-size: cover;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 /* MIDDLE COLUMN */
