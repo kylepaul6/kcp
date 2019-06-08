@@ -41,16 +41,10 @@ h2 {
     padding-top: 30px;
 }
 
-h4 {
-    color: #5a5c5e;
-}
 
 p {
-    text-align: center;
     color: #5a5c5e;
-    line-height: 1.5em;
 }
-
 
 /* HEADER */
 
@@ -61,7 +55,6 @@ header {
     padding: 0 100px;
     width: 100%;
     box-sizing: border-box;
-  
 }
 
 header .logo {
@@ -100,7 +93,6 @@ header nav ul li a:hover,
 header nav ul li a:active{
     background: #f4f8ff;
 }
-
 .menu-toggle {
     color: #fff;
     float: right;
@@ -118,7 +110,7 @@ header nav ul li a:active{
     .menu-toggle {
         display: block;
     }
-
+    
     header nav {
         position: absolute;
         width: 100%;
@@ -131,9 +123,7 @@ header nav ul li a:active{
     
     header nav.active {
         left: 0;
-        font-size: 2em;
     }
-    
     header nav ul {
         display: block;
         text-align: center;
@@ -142,16 +132,16 @@ header nav ul li a:active{
     header nav ul li a {
         border-bottom: 1px solid rgba(0,0,0, .2);
         height: 100px;
-        line-height: 100px;
+        line-height: 100px; 
+    }
+    p, h4 {
+        display: none;
     }
     .image-container {
         justify-content: center;
     }
-    p {
-        display: none;
-    }
-    h4 {
-        display: none;
+    img {
+        margin: 40px;
     }
 }
 
@@ -166,44 +156,33 @@ header nav ul li a:active{
 }
 
 .middle {
-    background-image: linear-gradient(to top, white, #e2e2e2);
+    background-image: url("../images/gear.jpg");
 }
 
 .right { 
-    background-image: linear-gradient(to top, white, #f4f8ff);
+    background-image: linear-gradient(to top, white, #e2e2e2);
 }
+
 
 .image-container {
     display: flex;
-    position: relative;
 }
 
 img {
-    padding: 10px;
     display: block;
+    margin: 30px;
      -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
 }
 
-/* PROJECTS */
-
-.project-image {
-    height: auto;
-    max-width:300%;
-    padding: 0;
+img:hover {
+    border-radius: 30px;
+    opacity: .5;
 }
-
-
-/* ARTICLE TEXT */
-
 .article-text {
-    position: absolute;
-    left: 30%;
-    margin: 80px;
-    display: inline-block;
+    margin: auto 30px auto;
 }
-
 
 /* FOOTER */
 footer {
