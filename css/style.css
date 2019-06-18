@@ -26,38 +26,25 @@ html {
     background-color: white;
 }
 
-
 a {
     text-decoration: none;
-    color: #5a5c5e;
+}
+.black-text {
+    color: black;
 }
 
-.learn-more {
-    color: #7caeff;
+.white-text {
+    color: white;
 }
-
 h2 {
-    color:#5a5c5e;
-    display: block;
     text-align: center;
-    padding: 20px;
-    padding-top: 30px;
+    color: white;
+    font-size: 3em;
 }
 
 p {
-    text-align: center;
-    color: #5a5c5e;
-    margin-top: 30px;
+    font-size: 1.5em;
 }
-.music-p {
-    color: #7caeff;
-}
-
-.learn-more {
-    line-height: 50px;
-}
-
-
 /* HEADER */
 
 header {
@@ -99,6 +86,7 @@ header nav ul li a{
     padding: 0 20px;
     text-decoration: none;
     display: block;
+    color: black;
 }
 
 header nav ul li a:hover,
@@ -145,37 +133,45 @@ header nav ul li a:active{
         border-bottom: 1px solid rgba(0,0,0, .2);
         height: 100px;
         line-height: 100px; 
+        color: white;
     }
-    p {
-        display: none;
-    }
-    img {
-        margin-bottom: 50px;
+    header nav ul li a:hover {
+        color: black;
     }
 }
 
 
 /* COLUMNS */ 
-.container {
-    margin-top: 50px;
+
+.left, .middle, .right {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .left {
     background-image: url("../images/wide-arch.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 25%;
-    min-height: 250px;
+    min-height:991px;
 }
+
 
 .middle {
     background-image: url("../images/gear.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 991px;
+    background-position: 70% 25%;
 }
 
 .right { 
     background-image: url("../images/code-wallpaper.jpg");
+    min-height: 991px;
+
 }
 
 
@@ -193,29 +189,6 @@ img {
     box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
 }
 
-
-/* LEFT COLUMN */
-
-.design-image {
-    height: auto;
-    max-width: 300%;
-    background-size: cover;
-    padding: 0; 
-}
-
-/* MIDDLE COLUMN */
-
-.ff {
-    height: auto;
-    width: 45%;
-}
-
-/* RIGHT COLUMN */
-.code-image {
-    max-width: 40%;
-}
-
-/* FOOTER */
 footer {
     background-image: linear-gradient(to top, white, #e2e2e2);
     height: 4em; 
