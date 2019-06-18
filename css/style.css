@@ -120,7 +120,6 @@ header nav ul li a:active{
         transition: 0.5s;
         background: black;
     }
-    
     header nav.active {
         left: 0;
     }
@@ -156,7 +155,6 @@ header nav ul li a:active{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 25%;
-    min-height:991px;
 }
 
 
@@ -164,14 +162,11 @@ header nav ul li a:active{
     background-image: url("../images/gear.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 991px;
     background-position: 70% 25%;
 }
 
 .right { 
     background-image: url("../images/code-wallpaper.jpg");
-    min-height: 991px;
-
 }
 
 
