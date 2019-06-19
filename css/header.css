@@ -137,6 +137,8 @@ header nav ul li a:active{
     header nav ul li a:hover {
         color: black;
     }
+    .container {
+        margin-top: 50px;
 }
 
 
