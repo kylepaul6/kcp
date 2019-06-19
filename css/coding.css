@@ -36,6 +36,7 @@ h2 {
 .words {
     margin: 10px 0px 10px 0px;
 }
+
   /* Add a gray background color with some padding */
 
   
@@ -76,10 +77,14 @@ h2 {
     clear: both;
   }
 
-
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
+@media screen and (min-width: 1350px) {
+  .project-title {
+    color: white;
   }
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
