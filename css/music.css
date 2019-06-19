@@ -1,39 +1,52 @@
-.left {
-    background-image: url("../images/gear.jpg");
-    background-size: cover;
+
+.container {
+    padding-top: 50px;
+    min-height: 1017px;
+}
+a {
+    color:black;
+}
+.effect-underline {
+    text-decoration: none;
+    color: white;
 }
 
-.middle {
-    background-image: linear-gradient(to top, white, #f4f8ff);
-}
-
-.right{
-    background-image: linear-gradient(to top, white, #f4f8ff);
-}
-
-.ff, .wasted {
-    margin: 40px;
+.gear {
+    height: 100vh;
     display: flex;
-    height: 300px;
-    width: 300px;
+    background: url("../images/music-logo.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+    justify-content: center;
+    align-items: center;
 }
 
-.ff {
-    margin-right: 80px;
+.songs {
+    height: 100vh;
+    display: flex;
+    background: url("../images/guy.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
 }
 
-.wasted {
-    margin-left: 80px;
-}
-
-@media (max-width: 991px) {
-    .wasted, .ff {
-        display: none;
-    }
-    .middle {
-        background-image: url("../images/wasted.png");
-        background-size: cover;
-        min-height: 300px;
-        background-position: 50%;
-    }
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
