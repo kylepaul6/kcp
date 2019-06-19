@@ -27,3 +27,9 @@
   .box:hover .image {
     opacity: 0.6;
   }
+
+  @media (min-width: 991px) {
+      .container {
+          margin-top: 50px;
+      }
+  }
