@@ -6,140 +6,6 @@ Off-White: #f4f8ff
 background-image: linear-gradient(to top, white, #f4f8ff);
 */
 
-/* DEFAULTS */ 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    margin:0;
-    padding: 0;
-    background-color: white;
-}
-
-a {
-    text-decoration: none;
-}
-.black-text {
-    color: black;
-}
-
-.white-text {
-    color: white;
-}
-h2 {
-    text-align: center;
-    color: white;
-    font-size: 3em;
-}
-
-p {
-    font-size: 1.5em;
-}
-/* HEADER */
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 100px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-header .logo {
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    float: left;
-    font-weight: bold;
-}
-
-header nav {
-    float: right;
-   
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-header nav ul li a{
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    text-decoration: none;
-    display: block;
-    color: black;
-}
-
-header nav ul li a:hover,
-header nav ul li a:active{
-    background: #f4f8ff;
-}
-.menu-toggle {
-    color: #fff;
-    float: right;
-    line-height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    color: #333;
-}
-
-@media (max-width: 991px) {
-    header{
-        padding: 0 20px;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    
-    header nav {
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 50px);
-        top: 50px;
-        left: -100%;
-        transition: 0.5s;
-        background: black;
-    }
-    header nav.active {
-        left: 0;
-    }
-    header nav ul {
-        display: block;
-        text-align: center;
-        
-    }
-    header nav ul li a {
-        border-bottom: 1px solid rgba(0,0,0, .2);
-        height: 100px;
-        line-height: 100px; 
-        color: white;
-    }
-    header nav ul li a:hover {
-        color: black;
-    }
-}
-
-
 /* COLUMNS */ 
 
 .left, .middle, .right {
@@ -151,7 +17,7 @@ header nav ul li a:active{
 
 
 .left {
-    background-image: url("../images/wide-arch.jpg");
+    background-image: url("../images/architecture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 25%;
@@ -159,14 +25,15 @@ header nav ul li a:active{
 
 
 .middle {
-    background-image: url("../images/gear.jpg");
+    background-image: url("../images/pedals.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 25%;
 }
 
 .right { 
-    background-image: url("../images/code-wallpaper.jpg");
+    background-image: url("../images/new-coding.jpg");
+    background-size: cover;
 }
 
 
