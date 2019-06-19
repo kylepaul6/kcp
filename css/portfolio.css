@@ -1,201 +1,30 @@
-/* Fonts & Colors 
-Black (almost): #1b2223
-Dark Gray: #5a5c5e
-Blue (mid): #b1c0d8
-Off-White: #f4f8ff
-background-image: linear-gradient(to top, white, #f4f8ff);
-*/
 
-/* DEFAULTS */ 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    margin:0;
-    padding: 0;
-    background-color: white;
-}
-
-
-a {
-    text-decoration: none;
-    color: #5a5c5e;
-}
-
-
-h2 {
-    color:#5a5c5e;
-    display: block;
-    text-align: center;
-    padding: 20px;
-    padding-top: 30px;
-}
-
-
-p {
-    color: #5a5c5e;
-}
-
-/* HEADER */
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 100px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-header .logo {
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    float: left;
-    font-weight: bold;
-}
-
-header nav {
-    float: right;
-   
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-header nav ul li a{
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    text-decoration: none;
-    display: block;
-}
-
-header nav ul li a:hover,
-header nav ul li a:active{
-    background: #f4f8ff;
-}
-.menu-toggle {
-    color: #fff;
-    float: right;
-    line-height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    color: #333;
-}
-
-@media (max-width: 991px) {
-    header{
-        padding: 0 20px;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    
-    header nav {
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 50px);
-        top: 50px;
-        left: -100%;
-        transition: 0.5s;
-        background: black;
-    }
-    
-    header nav.active {
-        left: 0;
-    }
-    header nav ul {
-        display: block;
-        text-align: center;
-        
-    }
-    header nav ul li a {
-        border-bottom: 1px solid rgba(0,0,0, .2);
-        height: 100px;
-        line-height: 100px; 
-    }
-    p, h4 {
-        display: none;
-    }
-    .column {
-        justify-content: center;
-    }
-    .image-container {
-        justify-content: center;
-    }
-    .article-text  {
-        display: none;
-    }
-   
-}
-
-
-/* COLUMNS */ 
 .container {
-    margin-top: 50px;
+    padding-top: 50px;
+    min-height: 1017px;
 }
 
-.left {
-    background-image: linear-gradient(to top, white, #f4f8ff);
-}
-
-.middle {
-    background-image: url("../images/gear.jpg");
-}
-
-.right { 
-    background-image: linear-gradient(to top, white, #e2e2e2);
-}
-
-
-.image-container {
+.box {
     display: flex;
+    justify-content: center;
+    width: 33.33%;
+    align-items: center;
+    float: left;
 }
 
-img {
+.box:hover {
+    background: gray;
+}
+
+.image {
+    opacity: 1;
     display: block;
-    margin: 30px;
-     -webkit-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 55px -20px rgba(0,0,0,0.75);
-}
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
-img:hover {
-    border-radius: 30px;
-    opacity: .5;
-}
-.article-text {
-    margin: auto 30px auto;
-}
-
-/* FOOTER */
-footer {
-    background-image: linear-gradient(to top, white, #e2e2e2);
-    height: 4em; 
-    text-align: center;
-}
-
-.footer {
-    vertical-align: middle;
-    padding: 20px;
-}
+  .box:hover .image {
+    opacity: 0.6;
+  }
