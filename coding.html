@@ -3,7 +3,7 @@
     <head>
         <title>KP</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/coding.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
@@ -40,8 +40,9 @@
             </script>
             
         <div class="container">
-            <!-- Left Section --> 
-            <div class="left">
+
+            <!-- Project Dropdown-->
+            <!-- <div class="left">
                 
                 <div class="dropdown">
                     <button class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
@@ -51,76 +52,50 @@
                         <a href="music.html">Knit on a Whim</a>
                     </div>
                 </div>
-            </div> <!-- /Left -->
+            </div> -->
             
-            
-            <!-- Middle Section --> 
-            
-            <div class="middle">
-                <h2>KCP</h2>
-                <div class="content">
-                        <div>
-                            <h3>What is it? </h3>
-                            <article>
-                            This website is designed to showcase my creative work, including musical creations, architectural drawings, and coding experience. 
-                            </article>
+            <!-- Middle Section -->
+            <div class="section">
+                <div class="project">
+                        <h2 class="project-title">Websites</h2>
+                    </div>
+                <div class="row">
+                        <div class="leftcolumn">
+                        <div class="card">
+                            <a href="#"><h3>K&copy;P</h3>
+                            <div style="height:200px;">
+                                <img src="images/index-html.png" class="index-html-code">
+                            </a></div>
+                                <div class="words">
+                                    <h3>What is it?</h3>
+                                    <p>This website serves as a platform for me to showcase my creative works, ranging from architectural drawings, musical creations, and coding experience. </p>
+                                </div>
+                            </div>
+                        <div class="card">
+                            <a href="#" onclick="alert('This page is not finished yet. Please come back soon to see the finished product.');"><h3>Knitting on a whim...</h3>
+                            <h5>This project is coming soon...</h5>
+                            <p>This website is in anticipation of Isabelle Chester's new business selling homemade, custom knits.</p>
+                        </a></div>
                         </div>
-                    
-                        <div>
-                            <br><br>
-                            <h3>How It Started</h3>
-                            <img src="images/code.png" style="float: right">
-                            <article class="article1">
-                                
-                            It started as an idea for a project - I wanted to combine my artistic interests in music and architecture in one all encompassing platform. After taking an introductory Python course, I found an interest in computer science. From there, I purchased a few online courses in HTML, CSS, and JavaScript. It became something of a hobby. I followed along with these courses and implemented what I learned to create what you are looking at now. 
-                            
-                            
-                            </article>
-                            
-                            <br><br>
-                            <h3>How I Made My First Page</h3>
-                            
-                            <article class="article">
-                            Beginning with an <em>index.html</em>, I had originally intended to have a 3-column layout with alternating blues and grays, but it felt bleak and outdated. From there came the idea to create a more modern page with a row-oriented view as opposed to columns. In each row, I added a <em>background-image: url("...")</em> CSS format with different images for each section. The color scheme I decided on was <strong>#f4f8ff</strong> (blue) and <strong>#e2e2e2</strong> (gray) which appear in the absence of images. 
-                            </article>
-                            <img src="images/code2.png" style="float: right">
-                            <br><br>
-                            
-                            <h3>Next Steps </h3>
-                            <article>
-                            I then copy&pasted this general format on the other pages. The navigation bar on the top section of the website is present on every page because nothing is more frustrating than having the navigate using harder-to-find links somewhere else on the page. Using a <em>@media query</em>, I added a responsive navigation bar that has position <em>left:-100%</em>; CSS parameter. Once the menu button on the top right is clicked, the new, vertical navigation bar moves to <em>left: 0</em>; with a .5s transition. 
-                            <br><br>
-                            The most difficult aspect for me has been responsiveness. Using the new navigation bar has made things easier as I use the same format for each page. However, certain aspects of responsiveness have been difficult to grasp, such as image size and position once that page is shrunk or increased. 
-                            </article>
-                            <br>
-                            <h3>Looking Forward</h3>
-                            <article>
-                            This website is quite simple - there is no "server", no place to search, input, or interact in any way. For this, I anticipate learning JavaScript and BootStrap. To list a few of my goals, I hope next to include a search bar in the top right corner, make the website more responsive to work on cell phones and tablets, and add some more subtle animations, such as slightly altering the size and zoom of an image when it is hovered over. Further, I wish to make this website have more "dry" code. In the building of this website, I noticed a lot of different .html files and .css files, even though I <em><link>'d</em> all the .html files to my <em>style.css</em> file. 
-                            </article>
+                        <div class="rightcolumn">
+                            <div class="card">
+                                <h3>About</h3>
+                                <p class="small-text">Learn about my website-building projects. Using HTML, CSS, Javascript, and a minimal amount of bootstrap, I created these websites for my own amusement and for others' endevours.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Project List</h3>
+                                <div class="fakeimg">K&copy;C</div><br>
+                                <div class="fakeimg">WPL</div><br>
+                                <div class="fakeimg">KOAW</div>
+                            </div>
+                        
                         </div>
-                            <br><br>
-                        <div>
-                            <h3>Final Note</h3>
-                            <article>The last thing I would like to say is I appreciate any input you may have. Any collaboration is welcome. 
-                            </article>
-                        </div>   
-            
-                
-                </div> <!-- End "Content" -->
-                
-        
-            </div> <!-- /Middle --> 
-            
-            
-            <!-- Right Section --> 
-            <div class="right">
-        
-            </div> <!-- /Right --> 
-            </div>
+                    </div>
+                </div> 
            <!-- Footer -->
-            <div class="footer">
-                <p>Copyright K&copy;P&trade;</p>
-            </div>
+           <footer>
+                <h5 class="footer">Copyright K&copyP 2019</h5>
+            </footer>
      
         </div>
 
