@@ -1,6 +1,6 @@
 
 .container {
-    padding-top: 50px;
+    margin-top: 50px;
     min-height: 1017px;
 }
 a {
@@ -50,3 +50,4 @@ a.effect-underline:hover:after {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
