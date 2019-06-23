@@ -66,7 +66,7 @@
                     }
 
                     .container {
-                        background: url("images/guy.jpg");
+                        background: url("../images/guy.jpg");
                         background-size: cover;
                     }
                     .leftcolumn {   
@@ -89,15 +89,14 @@
                     .fakeimg {
                     background-color: #aaa;
                     width: 100%;
-            
                     }
 
 
                     .card {
                     background-color: white;
-                  
                     }
 
+                
                     .row {
                         margin-top: 50px;
                     }
@@ -106,9 +105,20 @@
                     display: table;
                     clear: both;
                     }
-                    
-                
 
+                    .box-soundcloud {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .soundcloud {
+                        background: none;
+                    }
+                    .soundcloud-image {
+                        width: 50%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
                     .footer {
                     text-align: center;
         
@@ -169,16 +179,16 @@
                             </div>
                 </div>
                 <div class="rightcolumn">
-                    <div class="card">
-                        <h2>Sound Cloud</h2>
-                        <div class="fakeimg" style="height:100px;">Image</div>
-                       
+                    <div class="card soundcloud">
+                        <a href="#"><div class="box-soundcloud">
+                                <img src="images/soundcloud.jpg"  class="white-background soundcloud-image">
+                            </div></a>
                     </div>
-                    <div class="card">
-                        <h3>Quick Links</h3>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div><br>
-                        <div class="fakeimg">Image</div>
+
+                    <div class="card soundcloud">
+                        <a href="#"><div class="box-soundcloud">
+                                <img src="images/spotify.png"  class="white-background soundcloud-image">
+                            </div></a>
                     </div>
             
             </div>
