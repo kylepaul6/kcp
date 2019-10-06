@@ -2,7 +2,11 @@
 .container {
     min-height: 1017px;
 }
+.row-1 {
+    justify-content: center;
+    align-items: center;
 
+}
 .box {
     display: flex;
     justify-content: center;
