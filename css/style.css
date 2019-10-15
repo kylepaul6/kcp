@@ -17,6 +17,8 @@ background-image: linear-gradient(to top, white, #f4f8ff);
 
 
 .left {
+    background-image: url("../images/architecture.jpg");
+    background-opacity: 30%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 25%;
