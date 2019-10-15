@@ -37,13 +37,13 @@ a {
     color: white;
 }
 h2 {
-    text-align: center;
-    color: white;
     font-size: 3em;
 }
 
 p {
     font-size: 1.5em;
+    position: relative;
+    z-index: 2;
 }
 /* HEADER */
 
@@ -152,4 +152,5 @@ footer {
 .footer {
     vertical-align: middle;
     padding: 20px;
-}
+    
+    }
